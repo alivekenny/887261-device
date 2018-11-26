@@ -8,8 +8,10 @@
   <body>
     <header class="main-header">
       <img class="main-header-logo" width="163" height="36" src="img/logo.svg" alt="Логотип Девайса">
-      <a class="main-header-link-secondary">Поиск по сайту</a>
-      <!-- Кажется, поиск должен быть инпутом, но мы их еще не проходили -->
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <input type="search" class="search" name="search" placeholder="Поиск">
+        <button type="submit">Найти</button>
+      </form>
       <ul class="main-header-user-navigation">
         <li><a class="main-header-link" href="#">Войти</a></li>
       </ul>
