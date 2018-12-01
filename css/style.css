@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy-extrabold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0px;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: 0.15px;
+  font-weight: 300;
+
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+a:active {
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus,
+.main-footer-logo:hover,
+.main-footer-logo:focus,{
+  opacity: 0.6;
+}
+
+.main-header-logo:active,
+.main-footer-logo:active {
+  opacity: 0.3;
+}
+
+.main-header {
+  background-color: rgba(240,198,46,0.50);
+}
+
+.main-header ul,
+.main-footer ul {
+  list-style: none;
+}
+
+.main-header-navigation,
+.main-footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroy", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+}
+
+.contacts h2,
+.about h2 {
+  font-family: "gilroy", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.48px;
+  color: #000000;
+}
+
+.delivery-partners {
+  font-family: "gilroy", sans-serif;
+  list-style: none;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.button {
+  font-family: "gilroy", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: none;
+  background-color: #f0c52e;
+}
+
+.button:hover,
+.button:focus {
+  color: #000000;
+}
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  color: #ffffff;
+}
+
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer p {
+  color: #ffffff;
+}
+
+.main-footer-navigation a {
+  color: #ffffff;
+}
+
+.main-footer-navigation a:hover,
+.main-footer-navigation a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
