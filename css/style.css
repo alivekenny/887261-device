@@ -33,15 +33,15 @@ a:active {
   color: rgba(0, 0, 0, 0.3);;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus,
-.main-footer-logo:hover,
-.main-footer-logo:focus,{
+.header-logo:hover,
+.header-logo:focus,
+.footer-logo:hover,
+.footer-logo:focus,{
   opacity: 0.6;
 }
 
-.main-header-logo:active,
-.main-footer-logo:active {
+.header-logo:active,
+.footer-logo:active {
   opacity: 0.3;
 }
 
@@ -54,8 +54,8 @@ a:active {
   list-style: none;
 }
 
-.main-header-navigation,
-.main-footer-navigation {
+.header-navigation,
+.footer-navigation {
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroy", sans-serif;
@@ -68,8 +68,13 @@ a:active {
   border: none;
 }
 
+.header-link-secondary {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .contacts h2,
-.about h2 {
+.about h2,
+.container   h1 {
   font-family: "gilroy", sans-serif;
   font-size: 48px;
   line-height: 48px;
@@ -109,16 +114,16 @@ a:active {
   background-color: #464646;
 }
 
-.main-footer a {
+.footer-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.main-footer a:hover,
-.main-footer a:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: #ffffff;
 }
 
-.main-footer a:active {
+.footer-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -126,11 +131,74 @@ a:active {
   color: #ffffff;
 }
 
-.main-footer-navigation a {
+.footer-navigation a {
   color: #ffffff;
 }
 
-.main-footer-navigation a:hover,
-.main-footer-navigation a:focus {
+.footer-navigation a:hover,
+.footer-navigation a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* каталог */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter {
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.filter fieldset{
+  border: 0;
+}
+
+.filter-section {
+  list-style: none; 
+}
+
+.filter h2 {
+  font-family: "gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.filter-title {
+  font-family: "gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list-item h3 {
+  font-family: "gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.item-price {
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px; 
+}
+
+.footer-link-secondary {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* label > input:disabled {
+  color:red;
+  не выходит каменный цветок
+} */
