@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+*, *::after, *::before {
+  outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+
 a:hover,
 a:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -45,31 +49,98 @@ a:active {
   opacity: 0.3;
 }
 
+.container {
+  width:  1160px;
+  margin: 0 auto;
+}
+
 .main-header {
+  box-sizing: border-box;
   background-color: rgba(240,198,46,0.50);
+  padding: 50px 60px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
 }
 
-.main-header ul,
-.main-footer ul {
+.header-logo-index {
+  position: absolute;
+  top: 27px;
+}
+
+.header-top-row {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.search-form {
+  width: 440px;
+  margin-right: 200px;
+}
+
+.search-input {
+  width: 350px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.header-user-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  display: flex;
 }
 
-.header-navigation,
-.footer-navigation {
+.header-product-actions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  margin-left: auto;
+} 
+
+.header-navigation {
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroy", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  /* justify-content: space-between; */
 }
 
-.search-input {
-  background-color: transparent;
-  border: none;
+.header-navigation-catalog {
+  width: 440px;
+  margin-right: 200px;
+}
+
+.header-navigation-contacts {
+  margin-left: auto;
 }
 
 .header-link-secondary {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.two-columns {
+  display: flex;
+}
+
+.about {
+  box-sizing: border-box;
+  width: 465px;
+  margin-right: 140px;
+}
+
+.contacts {
+  width: 560px;
 }
 
 .contacts h2,
@@ -80,9 +151,15 @@ a:active {
   line-height: 48px;
   letter-spacing: 0.48px;
   color: #000000;
+
+  margin-bottom: 55px;
 }
 
 .delivery-partners {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
   font-family: "gilroy", sans-serif;
   list-style: none;
   font-size: 16px;
@@ -97,7 +174,7 @@ a:active {
   letter-spacing: 3.7px;
   text-transform: uppercase;
   color: #000000;
-
+  
   border: none;
   background-color: #f0c52e;
 }
@@ -114,6 +191,15 @@ a:active {
   background-color: #464646;
 }
 
+
+.footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroy", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
 .footer-link {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -125,6 +211,18 @@ a:active {
 
 .footer-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+  display: flex;
+  margin-top: 90px;
+}
+
+.footer-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .main-footer p {
@@ -139,6 +237,38 @@ a:active {
 .footer-navigation a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-first-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.footer-second-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-third-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-third-row::before {
+  content: "asdsd";
+}
+
+.modal {
+  display: none;
+}
+
 
 /* каталог */
 

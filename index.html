@@ -8,70 +8,84 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <img class="header-logo-index" width="163" height="36" src="img/logo.svg" alt="Логотип Девайса">
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <input type="search" class="search-input" name="search" placeholder="Поиск по каталогу">
-        <button type="submit">Найти</button>
-      </form>
-      <ul class="header-user-navigation">
-        <li><a class="link-user" href="#">Войти</a></li>
-      </ul>
-      <ul class="header-product-actions">
-        <li><a class="link-compare" href="#">Сравнить</a></li>
-        <li><a class="link-cart" href="#">Корзина</a></li>
+      <div class="header-top-row">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+          <input type="search" class="search-input" name="search" placeholder="Поиск по каталогу">
+          <button type="submit">Найти</button>
+        </form>
+        <ul class="header-user-navigation">
+          <li><a class="link-user" href="#">Войти</a></li>
+        </ul>
+        <ul class="header-product-actions">
+          <li><a class="link-compare" href="#">Сравнить</a></li>
+          <li><a class="link-cart" href="#">Корзина</a></li>
+        </div>
       </ul>
       <ul class="header-navigation">
         <!-- Полагаю, выпадающие элементы каталога можно сделать вложенным УЛом, но не уверен, так что не стану. -->
-        <li><a class="catalog-plus" href="catalog.html">Каталог товаров</a></li>
+        <li class="header-navigation-catalog"><a class="catalog-plus" href="catalog.html">Каталог товаров</a></li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="header-navigation-contacts"><a href="contacts.html">Контакты</a></li>
       </ul>
     </header>
     <main class="container">
       <h1>Интернет-магазин «Девайс»</h1>
       <!-- Здесь будет слайдер, разделы и преимущества -->
-      <section class="about">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="delivery-partners">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="about.html">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a class="map-modal" href="#"><img width="560" height="222" src="img/map.jpg" alt="Карта проезда"></a>
-        <a class="button" href="#">Напишите нам</a>
-      </section>
+      <div class="two-columns">
+        <section class="about">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="delivery-partners">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="about.html">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map-modal" href="#"><img width="560" height="222" src="img/map.jpg" alt="Карта проезда"></a>
+          <a class="button" href="#">Напишите нам</a>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <img class="footer-logo-index" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
-      <ul class="footer-user-navigation">
-          <li><a class="footer-link footer-link-user" href="#">Войти</a></li>
-      </ul>
-      <ul class="footer-product-actions">
-        <li><a class="footer-link footer-link-compare" href="#">Сравнить</a></li>
-        <li><a class="footer-link footer-link-cart" href="#">Корзина</a></li>
-      </ul>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <p class="footer-text">Тел.: +7 (495) 495-95-95</p>
-      <ul class="socials">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-      </ul>
-      <a class="academy-button" href="https://htmlacademy.ru/intensive/htmlcss">© HTML-Академия</a>
+      <div class="container">
+        <div class="footer-first-row">
+          <img class="footer-logo-index" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
+          <div class="footer-first-row-left-column">
+            <ul class="footer-user-navigation">
+                <li><a class="footer-link footer-link-user" href="#">Войти</a></li>
+            </ul>
+            <ul class="footer-product-actions">
+              <li><a class="footer-link footer-link-compare" href="#">Сравнить</a></li>
+              <li><a class="footer-link footer-link-cart" href="#">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-second-row">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-navigation">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p class="footer-text">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer-third-row">
+          <ul class="socials">
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+          </ul>
+          <a class="academy-button" href="https://htmlacademy.ru/intensive/htmlcss">© HTML-Академия</a>
+        </div>
+      </div>
     </footer>
     <section class="modal contact-modal">
       <h2>Связаться с нами</h2>
