@@ -145,14 +145,12 @@ a:active {
 
 .contacts h2,
 .about h2,
-.container   h1 {
+.container h1 {
   font-family: "gilroy", sans-serif;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.48px;
   color: #000000;
-
-  margin-bottom: 55px;
 }
 
 .delivery-partners {
@@ -261,13 +259,13 @@ a:active {
 .footer-logo,
 .footer-adress,
 .footer-third-row::before {
-  width: 300px;
+  width: 350px;
 }
 
 .footer-first-row-right-column,
 .footer-tel,
 .footer-copyright {
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: flex-end;
 }
@@ -305,22 +303,52 @@ a:active {
 
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.inner-page.container {
+  padding-left: 60px;
+  width: 1100px;
+}
+
+.inner-page h1 {
+  margin-bottom: 25px;
+}
+
+/* .inner-page .two-columns::before {
+  content: "";
+  position: absolute ;
+  left: 0px;
+  height: 100%;
+  width: 100px;
+  background-color: red;
+} */
+
 .filter {
   background-color:rgba(0, 0, 0, 0.05);
+  width: 200px;
+  padding: 30px 70px 50px 60px;
+  margin-right: 70px;
 }
 
 .filter fieldset{
   border: 0;
+  margin: 0;
+  padding: 0; 
+  margin-bottom: 45px;
 }
 
 .filter-section {
-  list-style: none; 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
 }
 
 .filter h2 {
@@ -340,6 +368,20 @@ a:active {
 
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-list-item {
+  margin-right: 40px;
+}
+
+.catalog-list-item:nth-child(2n) {
+  margin-right: 0px;
 }
 
 .catalog-list-item h3 {
