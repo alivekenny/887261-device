@@ -223,6 +223,7 @@ a:active {
   padding: 0;
   list-style: none;
   display: flex;
+  align-self: flex-end;
 }
 
 .main-footer p {
@@ -242,19 +243,49 @@ a:active {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .footer-second-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .footer-third-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
+.footer-logo,
+.footer-adress,
+.footer-third-row::before {
+  width: 300px;
+}
+
+.footer-first-row-right-column,
+.footer-tel,
+.footer-copyright {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 .socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-first-row-right-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-first-row-right-column ul {
   margin: 0;
   padding: 0;
   list-style: none;
