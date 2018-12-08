@@ -57,14 +57,15 @@ a:active {
 .main-header {
   box-sizing: border-box;
   background-color: rgba(240,198,46,0.50);
-  padding: 50px 60px;
+  padding: 0px 60px 50px 60px;
   margin-top: 40px;
   margin-bottom: 40px; 
 }
 
 .header-logo-index {
-  position: absolute;
-  top: 27px;
+  position: relative;
+  top: -15px;
+  /* Пока так, как узнаю градиенты, возможно сделаю на них  */
 }
 
 .header-top-row {
@@ -235,6 +236,10 @@ a:active {
 .footer-navigation a:hover,
 .footer-navigation a:focus {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation a:active {
+  color: red;
 }
 
 .footer-first-row {
