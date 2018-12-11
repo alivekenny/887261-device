@@ -787,14 +787,16 @@ a:active {
 .sorting-order label[for="descending"] {
   transform: rotate(180deg);
   margin-right: -10px;
+  opacity: 0.2;
 }
 
-.sort-order-radio:checked + label  {
+.sort-order-radio:checked + label,
+.sort-order-radio:active + label  {
   opacity: 1;
 }
 
 .sort-order-radio:hover + label  {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 /* ========== Catalog List =========== */
@@ -859,6 +861,40 @@ a:active {
   display: block;
 }
 
+.items-list-item-hover {
+  position: absolute;
+  left: 620px;
+  top: 544px;
+  width: 360px;
+  height: 380px;
+  
+  background-color: rgba(238,238,238,0.70);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.button-200 {
+  width: 200px;
+  margin-top: 180px;
+  margin-bottom: 15px;
+}
+
+.compare-button {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.compare-button:hover,
+.compare-button:focus {
+  color: rgba(0, 0, 0, 1)
+}
+
+.compare-button:active {
+  color: rgba(0, 0, 0, 0.2)
+}
 
 /* ====== Paging ====== */
 
