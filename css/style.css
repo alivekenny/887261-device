@@ -213,7 +213,7 @@ a:active {
   padding: 0;
   list-style: none;
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: -60px;
 
   display: flex;
@@ -223,10 +223,25 @@ a:active {
   
   height: 130px;
   width: 1040px;
-  padding: 0px 60px;
+  padding: 30px 60px 0 60px;
 
   background-color: #f7e296;
   z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 300ms;
+}
+
+.catalog-link:hover + .header-catalog-list {
+  opacity: 1;
+  transition-duration: 300ms;
+  pointer-events: all;
+}
+
+.header-catalog-list:hover {
+  opacity: 1;
+  transition-duration: 300ms;
+  pointer-events: all;
 }
 
 .header-catalog-list li {
@@ -238,19 +253,17 @@ a:active {
   margin-bottom: 50px;
 }
 
-
-
 .header-bold-link {
   margin-right: 30px;
 }
 
-.header-catalog {
+.catalog-link {
   position: relative;
-  width: 440px;
-  margin-right: 100px;
+  padding-right: 40px;
+  margin-right: 250px;
 }
 
-.header-catalog::after {
+.catalog-link::after {
   content: "";
   position: absolute;
   left: 230px;
@@ -347,49 +360,63 @@ a:active {
 
 .button {
   display: inline-block;
+  z-index: 1;
+
+  position: relative;
 
   font-family: "gilroy", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.7px;
   text-transform: uppercase;
+  background-color: transparent;
   color: #000000;
   text-align: center;
-  
   border: none;
-  background-color: transparent;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 40%,
-    #f0c52e 40%,
-    #f0c52e 60%,
-    transparent 60%
-    );
-}
-
-.button-260 {
-  min-width: 260px;
+  padding: 0 20px;
 }
 
 .button:hover,
 .button:focus {
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #f0c52e 0%,
-    #f0c52e 100%,
-    transparent 100%
-    );
   color: #000000;
 }
+
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-top: 4px solid #f0c52e;
+  border-bottom: 4px solid #f0c52e;
+  background-color: #f0c52e;
+  background-size: 2px 10px;
+  left: 0;
+  top: 8px;
+  transition-duration: 100ms;
+  z-index:  -1;
+}
+
+.button:hover::before {
+  top: -8px;
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+  transition-duration: 100ms;
+}
+
+
+.button-260 {
+  box-sizing: border-box;
+  min-width: 260px;
+}
 .contacts-map {
   display: block;
   margin: 0px;
   padding: 0px;
+  line-height: 0px;
   margin-top: 40px;
   margin-bottom: 65px;
   background-color: #ff00ff;
@@ -543,8 +570,7 @@ a:active {
   display: flex;
 }
 
-.modal,
-.header-catalog-list {
+.modal{
   visibility: hidden;
 }
 
@@ -814,26 +840,27 @@ a:active {
 
 /* Item Card */
 
-.items-list li {
+.items-list-item {
   margin: 0;
   padding: 0;
-}
-
-.items-list-item {
+  position: relative;
   margin-right: 40px; 
   margin-bottom: 45px;
   display: flex;
   width: 360px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.items-list li:nth-child(2n) .items-list-item {
+.items-list-item:nth-child(2n) {
   margin-right: 0px;
 }
 
-.items-list-item img {
-  margin-bottom: 33px;
+.item-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
 }
 
 .item-title {
@@ -863,16 +890,23 @@ a:active {
 
 .items-list-item-hover {
   position: absolute;
-  left: 620px;
-  top: 544px;
-  width: 360px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
   height: 380px;
   
   background-color: rgba(238,238,238,0.70);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  opacity: 0;
+  transition-duration: 200ms;
+}
+
+.items-list li:hover > .items-list-item-hover  {
+  /* display: flex; */
+  opacity: 1;
+  transition-duration: 200ms;
 }
 
 .button-200 {
@@ -983,12 +1017,6 @@ a:active {
 
 }
 
-/* label > input:disabled {
-  color:red;
-  не выходит каменный цветок
-} */
-
-
 /* = = = = Модальные окна = = = = */
 
 .modal {
@@ -1010,6 +1038,7 @@ a:active {
 .contact-modal {
   width: 760px;
   padding: 90px 100px;
+  
 }
 
 .contact-form {
