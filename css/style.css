@@ -615,11 +615,50 @@ a:active {
 /* ======== Filters ======== */
 
 .filter {
+  position: relative;
   background-color:rgba(0, 0, 0, 0.05);
   width: 390px;
   padding-top: 23px;
   padding-right: 70px;
   margin-right: 70px;
+}
+
+.filter::before,
+.filter::after,
+.sorting::before,
+.sorting::after {
+  content: "";
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+.filter::before {
+  top: 0;
+  left: -1000%;
+  width: 1000%;
+  height: 100%;
+  
+}
+
+.filter::after {
+  top: 100%;
+  right: 0;
+  width: 1000%;
+  height: 85px;
+}
+
+.sorting::before {
+  top: 0;
+  left: -1000%;
+  height: 100%;
+  width: 1000%;
+}
+
+.sorting::after {
+  top: 0;
+  left: 100%;;
+  height: 100%;
+  width: 1000%;
 }
 
 .filter .title-s {
@@ -748,6 +787,7 @@ a:active {
 /* ========== Sorting ========== */
 
 .sorting {
+  position: relative;
   display: flex;
   background-color:rgba(0, 0, 0, 0.05);
   padding-top: 20px;
