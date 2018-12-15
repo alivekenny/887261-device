@@ -228,7 +228,7 @@ a:active {
 .header-navigation {
   font-size: 18px;
   line-height: 24px;
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
@@ -333,7 +333,7 @@ a:active {
   margin: 0;
   padding: 0;
 
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.48px;
@@ -364,7 +364,7 @@ a:active {
   padding: 0;
   list-style: none;
   
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 40px;
@@ -396,7 +396,7 @@ a:active {
 
   position: relative;
 
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.7px;
@@ -508,7 +508,7 @@ a:active {
 
   font-size: 18px;
   line-height: 24px;
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
@@ -718,7 +718,7 @@ a:active {
   margin: 0;
   padding: 0;
 
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.5px;
@@ -726,7 +726,7 @@ a:active {
 }
 
 .text-18-bold {
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
@@ -939,7 +939,7 @@ a:active {
   margin: 0;
   padding: 0;
   
-  font-family: "gilroy", sans-serif;
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   order: 1;
