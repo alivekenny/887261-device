@@ -451,7 +451,7 @@ a:active {
   line-height: 0px;
   margin-top: 40px;
   margin-bottom: 65px;
-  background-color: #ff00ff;
+  background-color: #cccccc;
 }
 
 .footer-link {
@@ -601,11 +601,6 @@ a:active {
   list-style: none;
   display: flex;
 }
-
-.modal{
-  visibility: hidden;
-}
-
 
 /* ======== CATALOG PAGE ========= */
 
@@ -962,6 +957,7 @@ a:active {
 
 .items-list-item-hover {
   position: absolute;
+  box-sizing: border-box;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -971,19 +967,21 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 180px;
+
   opacity: 0;
   transition-duration: 200ms;
 }
 
-.items-list li:hover > .items-list-item-hover  {
-  /* display: flex; */
+.items-list-item:hover .items-list-item-hover  {
+  display: flex;
   opacity: 1;
   transition-duration: 200ms;
 }
 
 .button-200 {
+  box-sizing: border-box;
   width: 200px;
-  margin-top: 180px;
   margin-bottom: 15px;
 }
 
@@ -1097,19 +1095,50 @@ a:active {
   display: flex;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   z-index: 1;
   background-color: #ffffff;
 }
 
+
+.modal{
+  visibility: hidden;
+}
+
+.modal-show {
+  visibility: visible;
+  animation-name: modal-opening;
+  animation-duration: 300ms;
+}
+
+@keyframes modal-opening {
+  0% {
+    transform: scale(0.9);    
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);    
+    opacity: 1;
+  }
+}
+
 .map-modal {
-  /* width: 960px; */
+  width: 960px;
+  margin-left: -480px;
+  margin-top: -300px;
+
+}
+
+.map-modal iframe {
+  position: absolute;
 }
 
 .contact-modal {
   width: 760px;
-  padding: 90px 100px;
+  padding: 90px 100px 75px 100px;
+  margin-left: -480px;
+  margin-top: -300px;
   
 }
 
@@ -1117,6 +1146,20 @@ a:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+@keyframes form-required {
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-required-animation {
+  animation-name: form-required;
+  animation-duration: 200ms;
 }
 
 .input-wrapper {
