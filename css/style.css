@@ -72,7 +72,7 @@ a:active {
   box-sizing: border-box;
   background-image: linear-gradient(transparent 40px, rgba(240,198,46,0.50) 40px);
   padding: 0px 60px 50px 60px;
-  margin-bottom: 40px; 
+  /* margin-bottom: 40px;  */
 }
 
 .header-logo-index {
@@ -358,6 +358,363 @@ a:active {
   height: 7px;
   background-color: #000000;
 }
+
+/* Sliders */
+.slider {
+  display: flex;
+  background-image:
+    linear-gradient(
+      rgba(240,198,46,0.50) 110px,
+      #ffffff 110px
+      );
+  margin-bottom: 105px;
+}
+
+.slider-picture {
+  margin-left: 90px;
+}
+
+.slider-description {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.title-l2 {
+  line-height: 56px;
+}
+
+.slider-title {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.slider-title::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 0;
+  
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+.slider-title::after {
+  content: "01";
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  font-size: 179px;
+  color: #ffffff;
+}
+
+.slider-text {
+  margin-bottom: 50px;
+}
+
+.button-220 {
+  box-sizing: border-box;
+  width: 220px;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.slider-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  font-size: 0px;
+  margin-right: 16px;
+}
+
+.slider-button {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: 9px;
+}
+
+.slider-button::before {
+  content: "";
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-button-current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+
+  width: 4px;
+  height: 4px;
+  margin: 9px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-features {
+  display: flex;
+}
+
+.slider-features-item {
+  margin-right: 75px;
+}
+
+.slider-features-text-l {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  margin-bottom: 10px;
+}
+
+.slider-features-text-s {
+  margin: 0;
+  padding: 0;
+
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+/* Index Catalog Section */
+
+.catalog-section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.catalog-section-item {
+  position: relative;
+  display: block;
+  width: 160px;
+  padding-top: 195px;
+}
+
+.catalog-section-item::before,
+.catalog-section-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 160px;
+  height: 160px;
+
+  transition: 200ms;
+}
+
+.catalog-section-item::before {
+  background-color: rgba(240,198,46,0.50);
+}
+
+.catalog-section-item::after {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-section-item:hover::before,
+.catalog-section-item:focus::before {
+  background-color: rgba(240,198,46,1);
+}
+
+.catalog-section-item:active::after {
+  opacity: 0.3;
+}
+
+.catalog-section-item.vr::after {
+  background-image: url("../img/cat.vr.svg");
+}
+
+.catalog-section-item.monopod::after {
+  background-image: url("../img/cat.monopod.svg");
+  background-position-y: 43px;
+}
+
+.catalog-section-item.actioncam::after {
+  background-image: url("../img/cat.actioncam.svg");
+}
+
+.catalog-section-item.tracker::after {
+  background-image: url("../img/cat.tracker.svg");
+}
+
+.catalog-section-item.smartwatch::after {
+  background-image: url("../img/cat.smartwatch.svg");
+}
+
+.catalog-section-item.drone::after {
+  background-image: url("../img/cat.drone.svg");
+}
+
+
+/* Services */
+
+.service-section {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(
+    #ffffff 100px,
+    #e5e5e5 100px
+  );
+  min-height: 390px;
+  margin-bottom: 90px;
+}
+
+.service-section::before,
+.service-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1000%;
+  background-image: linear-gradient(
+    #ffffff 100px,
+    #e5e5e5 100px
+  );
+}
+  
+.service-section::before {
+  left: -1000%;
+}
+  
+.service-section::after {
+  right: -1000%;
+}
+
+
+.services-tabs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 85px;
+  width: 400px
+}
+
+.services-tabs li {
+  margin-bottom: 35px;
+}
+
+.services-tabs::after {
+  content: "";
+  position: absolute;
+  top: -85px;
+  left: 277px;
+  width: 7px;
+  height: 320px;
+  background-color: #000000;
+}
+
+.button-160 {
+  box-sizing: border-box;
+  width: 160px;
+}
+
+.button.button-current {
+  padding-right: 260px;
+  color: #f0c52e;
+}
+
+.button.button-current:hover {
+  color: #f0c52e;
+  cursor: default;
+}
+
+.button.button-current::before {
+  background-color: #000000;
+  top: -8px;
+  border-color: #000000;
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+}
+
+.service-description{
+  margin-top: 70px;
+  margin-bottom: 65px;
+  width: 760px;
+}
+
+.service-text {
+  width: 450px;
+}
+
+.service-description .title-l{
+  margin-bottom: 25px;
+}
+
+.service-delivery {
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 560px 15px;
+}
+
+/* Brands */
+
+.brands {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+}
+
+.brand {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 260px;
+  height: 100px;
+  font-size: 0px;
+  background-image: url("../img/brands-sprite.jpg");
+  background-position: 0px 0px;
+  opacity: 0.2;
+  transition: opacity 200ms;
+}
+
+.brand:hover {
+  background-position-y: -100px;
+  opacity: 1;
+}
+
+.brand-spgadgets {
+  background-position: -260px 0px;
+}
+
+.brand-gopro {
+  background-position: -520px 0px;
+}
+
+.brand-vive {
+  background-position: -780px 0px;
+}
+
+/* Delivery */
 
 .delivery-partners {
   margin: 0;
