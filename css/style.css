@@ -434,10 +434,11 @@ a:active {
   display: flex;
   font-size: 0px;
   margin-right: 16px;
+  align-content: flex-end;
 }
 
 .slider-button {
-  display: block;
+  display: flex;
   position: relative;
   width: 25px;
   height: 25px;
@@ -447,26 +448,32 @@ a:active {
 .slider-button::before {
   content: "";
   display: block;
+  position: absolute;
 
   width: 10px;
   height: 10px;
-  margin: 6px;
+  margin: auto;
   border: 1px solid #000000;
   border-radius: 50%;
+  transition: 300ms;
 }
 
 .slider-button-current::after {
   content: "";
   display: block;
   position: absolute;
-  top: -6px;
+  top: 0px;
   left: 0px;
 
   width: 4px;
   height: 4px;
-  margin: 9px;
+  margin: 3px;
   border: 1px solid #000000;
   border-radius: 50%;
+}
+
+.slider-button:hover::before {
+  transform: scale(1.5);
 }
 
 .slider-features {
@@ -573,10 +580,7 @@ a:active {
 
 
 /* Services */
-
 .service-section {
-  display: flex;
-  position: relative;
   background-image: linear-gradient(
     #ffffff 100px,
     #e5e5e5 100px
@@ -585,27 +589,10 @@ a:active {
   margin-bottom: 90px;
 }
 
-.service-section::before,
-.service-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 1000%;
-  background-image: linear-gradient(
-    #ffffff 100px,
-    #e5e5e5 100px
-  );
-}
-  
-.service-section::before {
-  left: -1000%;
-}
-  
-.service-section::after {
-  right: -1000%;
-}
 
+.service-section .container {
+  display: flex;
+}
 
 .services-tabs {
   position: relative;
@@ -613,7 +600,7 @@ a:active {
   padding: 0;
   list-style-type: none;
   margin-top: 85px;
-  width: 400px
+  width: 400px;
 }
 
 .services-tabs li {
