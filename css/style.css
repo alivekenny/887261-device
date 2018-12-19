@@ -366,24 +366,64 @@ a:active {
 }
 
 /* Sliders */
+
+.slider-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-image: linear-gradient(
+    rgba(240,198,46,0.50) 110px,
+    #ffffff 110px
+    );
+}
+
+.slider-description .button {
+  margin-bottom: 55px;
+}
+
 .slider {
   display: flex;
-  background-image:
-    linear-gradient(
-      rgba(240,198,46,0.50) 110px,
-      #ffffff 110px
-      );
-  margin-bottom: 105px;
+  position: relative;
+  margin-bottom: 65px;
+  display: none;
+
+  animation-name: slider-show;
+  animation-duration: 300ms;
 }
+
+@keyframes slider-show {
+  0% {
+    opacity: 0;
+    transform: translateX(100px)
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slider-current {
+  display: flex;
+}
+
+.slider-shown {
+  visibility: visible;
+}
+
 
 .slider-picture {
   margin-left: 90px;
 }
 
+.slider-3 .slider-picture {
+  margin-left: 10px;
+}
+
+
 .slider-description {
-  width: 500px;
+  width: 510px;
   margin-left: auto;
-  margin-right: 60px;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
 
 .title-l2 {
@@ -394,6 +434,7 @@ a:active {
   position: relative;
   margin-top: 80px;
   margin-bottom: 20px;
+  z-index: 0;
 }
 
 .slider-title::before {
@@ -411,9 +452,22 @@ a:active {
   content: "01";
   position: absolute;
   top: -30px;
-  right: -10px;
+  right: 0;
   font-size: 179px;
   color: #ffffff;
+  z-index: -1;
+}
+
+.slider-1 .slider-title::after {
+  content: "01";
+}
+
+.slider-2 .slider-title::after {
+  content: "02";
+}
+
+.slider-3 .slider-title::after {
+  content: "03";
 }
 
 .slider-text {
@@ -425,17 +479,14 @@ a:active {
   width: 220px;
 }
 
-.slider-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 55px;
-}
-
 .slider-buttons {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  position: absolute;
+  top: 330px;
+  right: 55px;
 
   display: flex;
   font-size: 0px;
@@ -462,6 +513,10 @@ a:active {
   border: 1px solid #000000;
   border-radius: 50%;
   transition: 300ms;
+}
+
+.slider-button-current {
+  pointer-events: none;
 }
 
 .slider-button-current::after {
