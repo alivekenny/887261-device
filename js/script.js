@@ -10,11 +10,26 @@ var contactEmail = document.querySelector(".contact-modal .input[name='email']")
 
 var mapButton = document.querySelector(".contacts-map");
 var mapModal = document.querySelector(".map-modal");
-var mapClose = document.querySelector(".map-modal .modal-close-button")
+var mapClose = document.querySelector(".map-modal .modal-close-button");
 
 var localStorageSupport = true;
 var savedName = "";
 var savedEmail = "";
+
+// MODALS
+
+var slider = document.querySelector(".slider");
+var sliderButton = document.querySelector(".slider-button");
+
+
+var slider1 = document.querySelector(".slider-1");
+var slider2 = document.querySelector(".slider-2");
+var slider3 = document.querySelector(".slider-3");
+
+var sliderButton1 = document.querySelector(".slider-button-1");
+var sliderButton2 = document.querySelector(".slider-button-2");
+var sliderButton3 = document.querySelector(".slider-button-3");
+
 
 try {
   savedName = localStorage.getItem("name");
@@ -22,6 +37,37 @@ try {
 } catch (error) {
   localStorageSupport = false;
 };
+
+
+sliderButton1.addEventListener("click", function(evt) {
+  evt.preventDefault(); 
+  slider1.classList.add("slider-current");
+  slider2.classList.remove("slider-current");
+  slider3.classList.remove("slider-current");
+  sliderButton1.classList.add("slider-button-current");
+  sliderButton2.classList.remove("slider-button-current");
+  sliderButton3.classList.remove("slider-button-current");
+} );
+
+sliderButton2.addEventListener("click", function(evt) {
+  evt.preventDefault(); 
+  slider1.classList.remove("slider-current");
+  slider2.classList.add("slider-current");
+  slider3.classList.remove("slider-current");
+  sliderButton1.classList.remove("slider-button-current");
+  sliderButton2.classList.add("slider-button-current");
+  sliderButton3.classList.remove("slider-button-current");
+} );
+
+sliderButton3.addEventListener("click", function(evt) {
+  evt.preventDefault(); 
+  slider1.classList.remove("slider-current");
+  slider2.classList.remove("slider-current");
+  slider3.classList.add("slider-current");
+  sliderButton1.classList.remove("slider-button-current");
+  sliderButton2.classList.remove("slider-button-current");
+  sliderButton3.classList.add("slider-button-current");
+} );
 
 contactButton.addEventListener("click", function(evt) {
   evt.preventDefault();
