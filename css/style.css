@@ -1438,14 +1438,15 @@ a:active {
   align-items: center;
   padding-top: 180px;
 
+  transform: scale(0.95);
   opacity: 0;
   transition-duration: 200ms;
 }
 
 .items-list-item:hover .items-list-item-hover  {
   display: flex;
+  transform: scale(1);
   opacity: 1;
-  transition-duration: 200ms;
 }
 
 .button-200 {
