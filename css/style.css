@@ -261,22 +261,33 @@ a:active {
 
   background-color: #f7e296;
   z-index: 1;
-  opacity: 0;
-  pointer-events: none;
-  transition-duration: 300ms;
+  /* pointer-events: none; */
+  display: none;
+  
+  animation-name: catalog-list-show;
+  animation-duration: 300ms;
 }
 
 .catalog-link:hover + .header-catalog-list {
-  opacity: 1;
-  transition-duration: 300ms;
-  pointer-events: all;
+  display: flex;
+  /* pointer-events: all; */
 }
 
 .header-catalog-list:hover {
   opacity: 1;
-  transition-duration: 300ms;
-  pointer-events: all;
+  display: flex;
+  /* pointer-events: all; */
 }
+
+@keyframes catalog-list-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .header-catalog-list li {
   margin-bottom: 6px;
