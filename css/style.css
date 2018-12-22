@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'gilroy';
-  src: url('../fonts/gilroy-extrabold.woff2') format('woff2');
+  font-family: "gilroy";
+  src: url("../fonts/gilroy-extrabold.woff2") format("woff2");
+  src: url("../fonts/gilroy-extrabold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -920,11 +921,24 @@ a:active {
   transform: scale(1.2);
 }
 
+
+ /* ====== Footer Index ======*/
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-logo {
+  margin-right: auto;
+}
+
 .footer-link {
   position: relative;
   color: rgba(255, 255, 255, 0.7);
   padding-left: 30px;
-  margin-left: 33px;
+  margin-left: 34px;
 }
 
 .footer-link:hover::before,
@@ -946,10 +960,6 @@ a:active {
 
 .footer-link-cart::before {
   background-image: url("../img/cart-orange.svg")
-}
-
-.footer-user-navigation li:last-child {
-  margin-left: 20px;
 }
 
 .footer-link:hover,
@@ -1042,7 +1052,6 @@ a:active {
   padding: 0;
 }
 
-.footer-first-row-right-column,
 .footer-tel {
   width: 350px;
   display: flex;
@@ -1222,6 +1231,10 @@ a:active {
   height: 95px;
 }
 
+.filter-price-range {
+  width: 100%;
+}
+
 .filter-color {
   margin-bottom: 25px;
 }
@@ -1235,20 +1248,21 @@ a:active {
 
 .filter-option + label {
   position: relative;
-  padding-left: 40px;
+  padding: 5px 0px 5px 40px;
 }
 
 .filter-option + label::before {
   content: "";
   position: absolute;
   left: -1px;
-  top: -2px;
+  top: 1px;
 
   width: 27px;
   height: 25px;
   background-repeat: no-repeat;
 }
 
+.filter-option:focus + label::before,
 .filter-option:checked + label:hover::before,
 .filter-option:checked + label:focus::before,
 .checkbox + label:hover::before,
@@ -1340,9 +1354,16 @@ a:active {
   font-weight: 400;
 }
 
+
 .sorting-option:hover + label,
 .sorting-option:focus + label {
   opacity: 0.6;
+}
+
+.sorting-option:focus + label,
+.sort-order-radio:focus + label,
+.filter-option:focus + label {
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .sorting-option:checked + label,
@@ -1375,8 +1396,7 @@ a:active {
   opacity: 1;
 }
 
-.sort-order-radio:hover + label,
-.sort-order-radio:focus + label {
+.sort-order-radio:hover + label {
   opacity: 0.4;
 }
 
@@ -1530,6 +1550,8 @@ a:active {
 
 .footer-link-secondary {
   color: rgba(255, 255, 255, 0.3);
+  padding-left: 0;
+  margin-left: 20px;
 }
 
 .social-button {

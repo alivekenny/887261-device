@@ -62,7 +62,7 @@
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-section filter-price">
               <legend class="text-18-bold filter-title">Стоимость</legend>
-              <input type="range" min="0" max="50000" step="100" name="price">
+              <input class="filter-price-range" type="range" min="0" max="50000" step="100" name="price">
               <!-- Помечено красным, пока хз как сделать нормально -->
             </fieldset>
             <fieldset class="filter-section filter-color">
@@ -147,8 +147,8 @@
             <ul class="items-list">
               <li class="items-list-item">
                 <div class="items-list-item-hover">
-                  <a class="button button-200" href="#">В корзину</a>
-                  <a class="compare-button" href="#">Добавить к сравнению</a>
+                  <a tabindex="-1" class="button button-200" href="#">В корзину</a>
+                  <a tabindex="-1" class="compare-button" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-pic" width="360" height="380" src="img/item-1.jpg" alt="Селфи-палка">
                 <a class="item-link" href="catalog-item.html">
@@ -158,8 +158,8 @@
               </li>
               <li class="items-list-item">
                 <div class="items-list-item-hover">
-                  <a class="button button-200" href="#">В корзину</a>
-                  <a class="compare-button" href="#">Добавить к сравнению</a>
+                  <a tabindex="-1" class="button button-200" href="#">В корзину</a>
+                  <a tabindex="-1" class="compare-button" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-pic" width="360" height="380" src="img/item-2.jpg" alt="Профессиональная селфи-палка">
                 <a class="item-link" href="catalog-item.html">
@@ -169,8 +169,8 @@
               </li>
               <li class="items-list-item">
                 <div class="items-list-item-hover">
-                  <a class="button button-200" href="#">В корзину</a>
-                  <a class="compare-button" href="#">Добавить к сравнению</a>
+                  <a tabindex="-1" class="button button-200" href="#">В корзину</a>
+                  <a tabindex="-1" class="compare-button" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-pic" width="360" height="380" src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
                 <a class="item-link" href="catalog-item.html">
@@ -180,8 +180,8 @@
               </li>
               <li class="items-list-item">
                 <div class="items-list-item-hover">
-                  <a class="button button-200" href="#">В корзину</a>
-                  <a class="compare-button" href="#">Добавить к сравнению</a>
+                  <a tabindex="-1" class="button button-200" href="#">В корзину</a>
+                  <a tabindex="-1" class="compare-button" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-pic new" width="360" height="380" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
                 <a class="item-link" href="catalog-item.html">
@@ -207,17 +207,15 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-first-row">
-        <img class="footer-logo-index" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
-        <div class="footer-first-row-right-column">
-          <ul class="footer-user-navigation">
-            <li><a class="footer-link footer-link-user" href="#">Валентин Петухов</a></li>
-            <li><a class="footer-link footer-link-secondary" href="#">Выйти</a></li>
-          </ul>
-          <ul class="footer-product-actions">
-            <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
-            <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
-          </ul>
-        </div>
+        <img class="footer-logo" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
+        <ul class="footer-list footer-user-navigation">
+          <li><a class="footer-link footer-link-user" href="#">Валентин Петухов</a></li>
+          <li><a class="footer-link footer-link-logout" href="#">Выйти</a></li>
+        </ul>
+        <ul class="footer-list footer-product-actions">
+          <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
+          <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
+        </ul>
       </div>
       <div class="footer-second-row">
         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
