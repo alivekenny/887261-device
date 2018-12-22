@@ -496,7 +496,7 @@ a:active {
   list-style: none;
 
   position: absolute;
-  top: 320px;
+  bottom: 245px;
   right: 55px;
 
   display: flex;
@@ -581,7 +581,8 @@ a:active {
 
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .catalog-section-item {
@@ -589,6 +590,7 @@ a:active {
   display: block;
   width: 160px;
   padding-top: 195px;
+  padding-bottom: 40px;
 }
 
 .catalog-section-item::before,
@@ -683,7 +685,7 @@ a:active {
   top: -85px;
   left: 277px;
   width: 7px;
-  height: 320px;
+  height: calc(100% + 65px);
   background-color: #000000;
 }
 
@@ -774,6 +776,7 @@ a:active {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 95px;
 }
 
@@ -977,6 +980,8 @@ a:active {
 
   padding: 5px 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-navigation li {
@@ -1021,15 +1026,15 @@ a:active {
 .footer-tel {
   margin: 0;
   padding: 0;
+  text-align: right;
 }
 
 .footer-third-row {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-bottom: 70px;
 }
 
-.footer-logo,
 .footer-adress,
 .footer-third-row::before {
   width: 350px;
@@ -1050,7 +1055,7 @@ a:active {
   padding: 0;
   list-style: none;
   display: flex;
-  margin-left: 420px;
+  margin-right: 50px;
 }
 
 .footer-first-row-right-column {
@@ -1561,7 +1566,6 @@ a:active {
   background-image: url("../img/copyright-orange.svg");
   background-position: right;
   margin-top: -3px;
-  margin-left: auto;
 }
 
 .footer-third-row::before {
