@@ -109,7 +109,7 @@ a:active {
 }
 
 .search-input::placeholder,
-.input::placeholder, {
+.input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -792,7 +792,8 @@ a:active {
   transition: opacity 200ms;
 }
 
-.brand:hover {
+.brand:hover,
+.brand:focus {
   background-position-y: -100px;
   opacity: 1;
 }
@@ -884,7 +885,8 @@ a:active {
   z-index:  -1;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   top: -8px;
   border-top-width: 20px;
   border-bottom-width: 20px;
