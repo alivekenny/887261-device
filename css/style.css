@@ -367,7 +367,7 @@ a:active {
 
 /* Sliders */
 
-.slider-wrapper {
+.sliders {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -579,7 +579,7 @@ a:active {
   position: relative;
   display: block;
   width: 160px;
-  padding-top: 195px;
+  padding-top: 190px;
 }
 
 .catalog-section-item::before,
@@ -655,7 +655,7 @@ a:active {
   display: flex;
 }
 
-.services-tabs {
+.service-tabs {
   position: relative;
   margin: 0;
   padding: 0;
@@ -664,11 +664,11 @@ a:active {
   width: 400px;
 }
 
-.services-tabs li {
+.service-tabs li {
   margin-bottom: 35px;
 }
 
-.services-tabs::after {
+.service-tabs::after {
   content: "";
   position: absolute;
   top: -85px;
@@ -686,11 +686,14 @@ a:active {
 .button.button-current {
   padding-right: 260px;
   color: #f0c52e;
+  pointer-events: none;
+  transition: 100ms;
 }
 
-.button.button-current:hover {
+.button.button-current:hover,
+.button.button-current:focus {
   color: #f0c52e;
-  cursor: default;
+  /* pointer-events: none; */
 }
 
 .button.button-current::before {
@@ -705,20 +708,53 @@ a:active {
   margin-top: 70px;
   margin-bottom: 65px;
   width: 760px;
+  display: none;
+  animation-name: service-show;
+  animation-duration: 300ms;
 }
 
-.service-text {
-  width: 450px;
+@keyframes service-show {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.service-current {
+  display: block;
 }
 
 .service-description .title-l{
   margin-bottom: 25px;
+  padding-top: 30px;
+  margin-top: -30px;
 }
 
-.service-delivery {
+.service-text {
+  width: 450px;
+  padding-bottom: 30px;
+}
+
+.service-description-1 {
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
-  background-position: 560px 15px;
+  background-position: 560px 45px;
+}
+
+.service-description-2 {
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  background-position: 540px 15px;
+}
+
+.service-description-3 {
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+  background-position: 535px 15px;
 }
 
 /* Brands */

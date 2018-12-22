@@ -30,6 +30,44 @@ var sliderButton1 = document.querySelector(".slider-button-1");
 var sliderButton2 = document.querySelector(".slider-button-2");
 var sliderButton3 = document.querySelector(".slider-button-3");
 
+var serviceButton1 = document.querySelector(".service-tabs li:nth-child(1) .button");
+var serviceButton2 = document.querySelector(".service-tabs li:nth-child(2) .button");
+var serviceButton3 = document.querySelector(".service-tabs li:nth-child(3) .button");
+
+var serviceDescription1 = document.querySelector(".service-description-1");
+var serviceDescription2 = document.querySelector(".service-description-2");
+var serviceDescription3 = document.querySelector(".service-description-3");
+
+
+serviceButton1.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  serviceDescription1.classList.add("service-current");
+  serviceDescription2.classList.remove("service-current");
+  serviceDescription3.classList.remove("service-current");
+  serviceButton1.classList.add("button-current");
+  serviceButton2.classList.remove("button-current");
+  serviceButton3.classList.remove("button-current");
+} );
+
+serviceButton2.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  serviceDescription1.classList.remove("service-current");
+  serviceDescription2.classList.add("service-current");
+  serviceDescription3.classList.remove("service-current");
+  serviceButton1.classList.remove("button-current");
+  serviceButton2.classList.add("button-current");
+  serviceButton3.classList.remove("button-current");
+} );
+
+serviceButton3.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  serviceDescription1.classList.remove("service-current");
+  serviceDescription2.classList.remove("service-current");
+  serviceDescription3.classList.add("service-current");
+  serviceButton1.classList.remove("button-current");
+  serviceButton2.classList.remove("button-current");
+  serviceButton3.classList.add("button-current");
+} );
 
 try {
   savedName = localStorage.getItem("name");

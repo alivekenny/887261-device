@@ -44,13 +44,13 @@
       <li class="header-bold-link header-contacts"><a href="contacts.html">Контакты</a></li>
     </ul>
   </header>
-  <main">
+  <main>
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
-    <div class="slider-wrapper container">
+    <div class="sliders container">
 
       <section class="slider slider-1 slider-current">
-        <img class="slider-picture" src="img/slider-1.png" width="384" height="486">
+        <img class="slider-picture" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
         <div class="slider-description">
           <h2 class="title-l title-l2 slider-title">Делай селфи, <br> как Бен Стиллер!</h2>
           <p class="text-15 slider-text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь,
@@ -74,7 +74,7 @@
       </section>
 
       <section class="slider slider-2">
-        <img class="slider-picture" src="img/slider-2.png" width="345" height="485">
+        <img class="slider-picture" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         <div class="slider-description">
           <h2 class="title-l title-l2 slider-title">Худеем <br>правильно</h2>
           <p class="text-15 slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
@@ -90,7 +90,7 @@
       </section>
 
       <section class="slider slider-3">
-        <img class="slider-picture" src="img/slider-3.png" width="526" height="334">
+        <img class="slider-picture" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
         <div class="slider-description">
           <h2 class="title-l title-l2 slider-title">Порхает как бабочка, <br>жалит как пчела!</h2>
           <p class="text-15 slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -116,8 +116,7 @@
       </ul>
 
     </div>
-    </div>
-    </section>
+
     <section class="catalog-section container">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog-section-list">
@@ -132,19 +131,32 @@
     <section class="service-section">
       <div class="container">
         <h2 class="visually-hidden">Наш сервис</h2>
-        <ul class="services-tabs">
-          <li><a class="button button-160 button-current">Доставка</a></li>
+        <ul class="service-tabs">
+          <li><a class="button button-160 button-current" href="#">Доставка</a></li>
           <li><a class="button button-160" href="#">Гарантия</a></li>
           <li><a class="button button-160" href="#">Кредит</a></li>
         </ul>
-        <section class="service-description service-delivery">
-          <h3 class="title-l title-l2">Доставка</h3>
-          <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
+        <div class="service-wrapper">
+          <section class="service-description service-description-1 service-current">
+            <h3 class="title-l title-l2">Доставка</h3>
+            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+          <section class="service-description service-description-2">
+            <h3 class="title-l title-l2">Гарантия</h3>
+            <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы
+              выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </section>
+          <section class="service-description service-description-3">
+            <h3 class="title-l title-l2">Кредит</h3>
+            <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+        </div>
       </div>
     </section>
     <section class="container">
+      <h2 class="visually-hidden">Наши бренды</h2>
       <ul class="brands">
         <li><a class="brand brand-dji" href="#">DJI</a></li>
         <li><a class="brand brand-spgadgets" href="#">SP Gadgets</a></li>
@@ -173,69 +185,69 @@
         <a class="button button-260" href="#">Напишите нам</a>
       </section>
     </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-first-row">
-          <img class="footer-logo-index" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
-          <div class="footer-first-row-right-column">
-            <ul class="footer-user-navigation">
-              <li><a class="footer-link link-user footer-link-user" href="#">Войти</a></li>
-            </ul>
-            <ul class="footer-product-actions">
-              <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
-              <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-second-row">
-          <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
-          <ul class="footer-navigation">
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-first-row">
+        <img class="footer-logo-index" width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса">
+        <div class="footer-first-row-right-column">
+          <ul class="footer-user-navigation">
+            <li><a class="footer-link link-user footer-link-user" href="#">Войти</a></li>
           </ul>
-          <p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
-        </div>
-        <div class="footer-third-row">
-          <ul class="socials">
-            <li><a class="social-button facebook-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button instagram-button" href="#">Инстаграм</a></li>
-            <li><a class="social-button twitter-button" href="#">Твиттер</a></li>
+          <ul class="footer-product-actions">
+            <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
           </ul>
-          <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">© HTML-Академия</a>
         </div>
       </div>
-    </footer>
-    <section class="modal contact-modal">
-      <h2 class="visually-hidden">Связаться с нами</h2>
-      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="contact-info-wrapper">
-          <div class="input-wrapper">
-            <label class="text-18-bold" for="name">Ваше имя</label>
-            <input class="input name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
-          </div>
-          <div class="input-wrapper">
-            <label class="text-18-bold" for="email">Ваш e-mail</label>
-            <input class="input" type="email" name="email" id="email" placeholder="email@example.com">
-          </div>
+      <div class="footer-second-row">
+        <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-navigation">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-third-row">
+        <ul class="socials">
+          <li><a class="social-button facebook-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button instagram-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button twitter-button" href="#">Твиттер</a></li>
+        </ul>
+        <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">© HTML-Академия</a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal contact-modal">
+    <h2 class="visually-hidden">Связаться с нами</h2>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contact-info-wrapper">
+        <div class="input-wrapper">
+          <label class="text-18-bold" for="name">Ваше имя</label>
+          <input class="input name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
         </div>
         <div class="input-wrapper">
-          <label class="text-18-bold" for="letter-text">Текст письма</label>
-          <textarea class="input textarea" name="textarea" id="letter-text" placeholder="В свободной форме" rows="7"></textarea>
+          <label class="text-18-bold" for="email">Ваш e-mail</label>
+          <input class="input" type="email" name="email" id="email" placeholder="email@example.com">
         </div>
-        <button type="submit" class="button button-200">Отправить</button>
-        <button type="button" class="modal-close-button">Закрыть</button>
-      </form>
-    </section>
-    <section class="modal map-modal">
-      <h2 class="visually-hidden">Адрес офиса</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1096032554806!2d37.528877725327376!3d55.68708219372479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1544993767592"
-        width="960" height="530" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <img src="img/map-big.jpg" width="960" height="530" alt="г. Москва, ул. Строителей, 15">
+      </div>
+      <div class="input-wrapper">
+        <label class="text-18-bold" for="letter-text">Текст письма</label>
+        <textarea class="input textarea" name="textarea" id="letter-text" placeholder="В свободной форме" rows="7"></textarea>
+      </div>
+      <button type="submit" class="button button-200">Отправить</button>
       <button type="button" class="modal-close-button">Закрыть</button>
-    </section>
-    <script src="js/script.js"></script>
+    </form>
+  </section>
+  <section class="modal map-modal">
+    <h2 class="visually-hidden">Адрес офиса</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1096032554806!2d37.528877725327376!3d55.68708219372479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1544993767592"
+      width="960" height="530" style="border:0" allowfullscreen></iframe>
+    <img src="img/map-big.jpg" width="960" height="530" alt="г. Москва, ул. Строителей, 15">
+    <button type="button" class="modal-close-button">Закрыть</button>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
