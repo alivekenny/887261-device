@@ -901,7 +901,8 @@ a:active {
   transition-duration: 200ms;
 }
 
-.contacts-map:hover img {
+.contacts-map:hover img,
+.contacts-map:focus img {
   transform: scale(1.2);
 }
 
@@ -1349,7 +1350,8 @@ a:active {
   opacity: 1;
 }
 
-.sort-order-radio:hover + label  {
+.sort-order-radio:hover + label,
+.sort-order-radio:focus + label {
   opacity: 0.4;
 }
 
@@ -1443,7 +1445,8 @@ a:active {
   transition-duration: 200ms;
 }
 
-.items-list-item:hover .items-list-item-hover  {
+.items-list-item:hover .items-list-item-hover,
+.items-list-item:focus .items-list-item-hover  {
   display: flex;
   transform: scale(1);
   opacity: 1;
