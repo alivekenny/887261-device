@@ -527,6 +527,10 @@ a:active {
   margin-right: 6px;
 }
 
+.slider-button:focus {
+  outline: none;
+}
+
 .slider-button::before {
   content: "";
   position: absolute;
@@ -556,7 +560,8 @@ a:active {
   border-radius: 50%;
 }
 
-.slider-button:hover::before {
+.slider-button:hover::before,
+.slider-button:focus:before {
   transform: scale(1.5);
 }
 
@@ -879,6 +884,7 @@ a:active {
 .button:hover,
 .button:focus {
   color: #000000;
+  outline: none;
 }
 
 .button:active {
@@ -1240,12 +1246,63 @@ a:active {
   width: 200px;
 }
 
+
 .filter-price {
-  height: 95px;
+  position: relative;
+  min-height: 95px;
 }
 
 .filter-price-range {
+  position: absolute;
+  pointer-events: none;
   width: 100%;
+  -webkit-appearance: none;
+  background-image: linear-gradient(
+    to right,
+    #91c92f 60%,
+    #dbdbdb 60%);
+  height: 2px;
+}
+
+.filter-price-range:focus {
+  outline: none;
+}
+
+.filter-price-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border: 8px solid #ffffff;
+  background-color: #acacac;
+  box-shadow: 0 2px 0 0 #dbdbdb;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: ew-resize;
+  transition-duration: 200ms;
+}
+
+.filter-price-range::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  color: rgba(0, 0, 0, 0.2)
+}
+
+.filter-price-range:hover::-webkit-slider-thumb,
+.filter-price-range:focus::-webkit-slider-thumb {
+  transform: scale(1.3);
+  /* border-width: 10px; */
+}
+
+.range-min::before {
+  content: "от 0";
+  left: 0;
+}
+.range-max::before {
+  content: "до 50 000";
+  left: 90px;
 }
 
 .filter-color {
@@ -1545,7 +1602,7 @@ a:active {
 
 .compare-button:hover,
 .compare-button:focus {
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 1);
 }
 
 .compare-button:active {

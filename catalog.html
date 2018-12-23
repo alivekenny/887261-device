@@ -62,7 +62,8 @@
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-section filter-price">
               <legend class="text-18-bold filter-title">Стоимость</legend>
-              <input type="range" min="0" max="50000" step="100" name="price">
+                <input class="filter-price-range range-min" type="range" min="0" max="50000" step="1000" value="0" name="price">
+                <input class="filter-price-range range-max" type="range" min="0" max="50000" step="1000" value="30000" name="price">
               <!-- Помечено красным, пока хз как сделать нормально -->
             </fieldset>
             <fieldset class="filter-section filter-color">
