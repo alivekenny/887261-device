@@ -62,6 +62,7 @@ a:active {
 .header-logo-index {
   margin-top: 22px;
   margin-bottom: 15px;
+  width: 164px;
 }
 
 .header-logo:hover,
@@ -337,7 +338,8 @@ a:active {
 
 .header-link-secondary {
   color: rgba(0, 0, 0, 0.3);
-  padding-left: 20px;
+  padding-left: 0px;
+  margin-left: 20px;
 }
 
 .two-columns {
