@@ -1041,7 +1041,7 @@ a:active {
 .footer-first-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -1084,18 +1084,6 @@ a:active {
   list-style: none;
   display: flex;
   margin-right: 50px;
-}
-
-.footer-first-row-right-column {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-first-row-right-column ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
 }
 
 /* ======== CATALOG PAGE ========= */

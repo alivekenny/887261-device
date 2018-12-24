@@ -62,8 +62,9 @@
           <form action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-section filter-price">
               <legend class="text-18-bold filter-title">Стоимость</legend>
-                <input class="filter-price-range range-min" type="range" min="0" max="50000" step="1000" value="0" name="price">
-                <input class="filter-price-range range-max" type="range" min="0" max="50000" step="1000" value="30000" name="price">
+              <input class="filter-price-range range-min" type="range" min="0" max="50000" step="1000" value="0" name="price">
+              <input class="filter-price-range range-max" type="range" min="0" max="50000" step="1000" value="30000"
+                name="price">
               <!-- Помечено красным, пока хз как сделать нормально -->
             </fieldset>
             <fieldset class="filter-section filter-color">
@@ -209,16 +210,14 @@
     <div class="container">
       <div class="footer-first-row">
         <a class="footer-logo" href="index.html"><img width="164" height="36" src="img/logo-orange.svg" alt="Логотип Девайса"></a>
-        <div class="footer-first-row-right-column">
-          <ul class="footer-user-navigation">
-            <li><a class="footer-link footer-link-user" href="https://htmlacademy.ru/profile/id887261">Валентин Петухов</a></li>
-            <li><a class="footer-link footer-link-secondary" href="#">Выйти</a></li>
-          </ul>
-          <ul class="footer-product-actions">
-            <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
-            <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
-          </ul>
-        </div>
+        <ul class="footer-list footer-user-navigation">
+          <li><a class="footer-link footer-link-user" href="https://htmlacademy.ru/profile/id887261">Валентин Петухов</a></li>
+          <li><a class="footer-link footer-link-logout" href="#">Выйти</a></li>
+        </ul>
+        <ul class="footer-list footer-product-actions">
+          <li><a class="footer-link link-compare footer-link-compare" href="#">Сравнить</a></li>
+          <li><a class="footer-link link-cart footer-link-cart" href="#">Корзина</a></li>
+        </ul>
       </div>
       <div class="footer-second-row">
         <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
