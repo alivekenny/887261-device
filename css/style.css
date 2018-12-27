@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body, .text-15 {
   margin: 0px;
 
@@ -99,7 +107,7 @@ a:active {
 
 .header-top-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 29px;
 }
 
@@ -246,6 +254,7 @@ a:active {
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
@@ -840,6 +849,7 @@ a:active {
   list-style: none;
   
   font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: bold;
   list-style: none;
   font-size: 16px;
   line-height: 40px;
@@ -874,6 +884,7 @@ a:active {
   font-family: "gilroy", "helvetica", "arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: bold;
   letter-spacing: 3.7px;
   text-transform: uppercase;
   background-color: transparent;
@@ -1006,6 +1017,7 @@ a:active {
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
@@ -1206,6 +1218,7 @@ a:active {
   padding: 0;
 
   font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 3.5px;
@@ -1215,6 +1228,7 @@ a:active {
 
 .text-18-bold {
   font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
@@ -1249,11 +1263,7 @@ a:active {
     #91c92f 60%,
     #dbdbdb 60%);
   height: 2px;
-  margin: 10px 0 22px 0;
-}
-
-.filter-price-range:focus {
-  outline: none;
+  margin: 10px 0 25px 0;
 }
 
 .price-thumb {
@@ -1423,6 +1433,7 @@ a:active {
 .sorting-option:focus + label,
 .sort-order-radio:focus + label,
 .filter-option:focus + label {
+  outline: auto;
   outline: auto 5px -webkit-focus-ring-color;
 }
 
@@ -1520,7 +1531,9 @@ a:active {
 .item-price {
   margin: 0;
   padding: 0;
-
+  
+  font-family: "gilroy", "helvetica", "arial", sans-serif;
+  font-weight: lighter;
   text-align: right;
   font-size: 16px;
   line-height: 24px;
