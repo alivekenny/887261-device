@@ -38,6 +38,12 @@ var serviceDescription1 = document.querySelector(".service-description-1");
 var serviceDescription2 = document.querySelector(".service-description-2");
 var serviceDescription3 = document.querySelector(".service-description-3");
 
+try {
+  savedName = localStorage.getItem("name");
+  savedEmail = localStorage.getItem("email");
+} catch (error) {
+  localStorageSupport = false;
+};
 
 serviceButton1.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -47,7 +53,7 @@ serviceButton1.addEventListener("click", function(evt) {
   serviceButton1.classList.add("button-current");
   serviceButton2.classList.remove("button-current");
   serviceButton3.classList.remove("button-current");
-} );
+});
 
 serviceButton2.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -57,7 +63,7 @@ serviceButton2.addEventListener("click", function(evt) {
   serviceButton1.classList.remove("button-current");
   serviceButton2.classList.add("button-current");
   serviceButton3.classList.remove("button-current");
-} );
+});
 
 serviceButton3.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -67,15 +73,7 @@ serviceButton3.addEventListener("click", function(evt) {
   serviceButton1.classList.remove("button-current");
   serviceButton2.classList.remove("button-current");
   serviceButton3.classList.add("button-current");
-} );
-
-try {
-  savedName = localStorage.getItem("name");
-  savedEmail = localStorage.getItem("email");
-} catch (error) {
-  localStorageSupport = false;
-};
-
+});
 
 sliderButton1.addEventListener("click", function(evt) {
   evt.preventDefault(); 
@@ -85,7 +83,7 @@ sliderButton1.addEventListener("click", function(evt) {
   sliderButton1.classList.add("slider-button-current");
   sliderButton2.classList.remove("slider-button-current");
   sliderButton3.classList.remove("slider-button-current");
-} );
+});
 
 sliderButton2.addEventListener("click", function(evt) {
   evt.preventDefault(); 
@@ -95,7 +93,7 @@ sliderButton2.addEventListener("click", function(evt) {
   sliderButton1.classList.remove("slider-button-current");
   sliderButton2.classList.add("slider-button-current");
   sliderButton3.classList.remove("slider-button-current");
-} );
+});
 
 sliderButton3.addEventListener("click", function(evt) {
   evt.preventDefault(); 
@@ -105,7 +103,7 @@ sliderButton3.addEventListener("click", function(evt) {
   sliderButton1.classList.remove("slider-button-current");
   sliderButton2.classList.remove("slider-button-current");
   sliderButton3.classList.add("slider-button-current");
-} );
+});
 
 contactButton.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -116,12 +114,12 @@ contactButton.addEventListener("click", function(evt) {
   contactName.value = savedName;
   contactEmail.value = savedEmail;
   };
-} );
+});
 
 contactClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   contactModal.classList.remove("modal-show");
-} );
+});
 
 contactForm.addEventListener("submit", function(evt) {
   if (!contactTextarea.value) {
@@ -147,10 +145,10 @@ window.addEventListener("keydown", function(evt) {
 
 mapButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  mapModal.classList.add("modal-show")
+  mapModal.classList.add("modal-show");
 });
 
 mapClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   mapModal.classList.remove("modal-show");
-} );
+});
