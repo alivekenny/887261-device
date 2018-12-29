@@ -493,7 +493,7 @@ a:active {
 }
 
 .slider-description .button {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .slider {
@@ -605,7 +605,7 @@ a:active {
 }
 
 .slider-text {
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .button-220 {
@@ -620,7 +620,7 @@ a:active {
   list-style: none;
 
   position: absolute;
-  bottom: 245px;
+  bottom: 248px;
   right: 55px;
 
   display: -webkit-box;
@@ -700,7 +700,7 @@ a:active {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.36px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .slider-features-text-s {
@@ -736,7 +736,7 @@ a:active {
   position: relative;
   display: block;
   width: 160px;
-  padding-top: 195px;
+  padding-top: 190px;
   padding-bottom: 40px;
 }
 
