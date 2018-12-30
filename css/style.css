@@ -14,9 +14,12 @@
   font-style: normal;
 }
 
-body, .text-15 {
+body {
   margin: 0px;
+  min-width: 1200px;
+}
 
+body, .text-15 {
   font-family: "Open Sans", "helvetica", "arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -24,8 +27,6 @@ body, .text-15 {
   letter-spacing: 0.15px;
   font-weight: 300;
   text-transform: none;
-
-  /* background-color: #ffffff; */
 }
 
 a {
